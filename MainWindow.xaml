@@ -16,10 +16,14 @@
         </Style>
     </Window.Resources>
 
-    <ScrollViewer>
+    
 
-        <Border Margin="16">
-            <Grid>
+    <Border Margin="16">
+
+        <StackPanel>
+            <TextBlock x:Name="WhoseTurnTextBlock" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0,0,0,2" />
+            
+            <Grid x:Name="TicTacToeBoardContainer">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -31,20 +35,21 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <Button x:Name="Button_0_0" Content="X" Grid.Row="0" Grid.Column="0"/>
-                <Button x:Name="Button_0_1" Content="O" Grid.Row="0" Grid.Column="1"/>
-                <Button x:Name="Button_0_2" Content="O" Grid.Row="0" Grid.Column="2"/>
-                
-                <Button x:Name="Button_1_0" Content="X" Grid.Row="1" Grid.Column="0"/>
-                <Button x:Name="Button_1_1" Content="O" Grid.Row="1" Grid.Column="1"/>
-                <Button x:Name="Button_1_2" Content="O" Grid.Row="1" Grid.Column="2"/>
-                
-                <Button x:Name="Button_2_0" Content="X" Grid.Row="2" Grid.Column="0"/>
-                <Button x:Name="Button_2_1" Content="X" Grid.Row="2" Grid.Column="1"/>
-                <Button x:Name="Button_2_2" Content="X" Grid.Row="2" Grid.Column="2"/>
-                
-                
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_0_0" Grid.Row="0" Grid.Column="0"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_0_1" Grid.Row="0" Grid.Column="1"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_0_2" Grid.Row="0" Grid.Column="2"/>
+
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_1_0" Grid.Row="1" Grid.Column="0"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_1_1" Grid.Row="1" Grid.Column="1"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_1_2" Grid.Row="1" Grid.Column="2"/>
+
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_2_0" Grid.Row="2" Grid.Column="0"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_2_1" Grid.Row="2" Grid.Column="1"/>
+                <Button Click="TicTacToeCellButton_Click" x:Name="Button_2_2" Grid.Row="2" Grid.Column="2"/>
             </Grid>
-        </Border>
-    </ScrollViewer>
+        </StackPanel>
+        
+
+    </Border>
+
 </Window>
