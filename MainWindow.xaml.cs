@@ -183,6 +183,8 @@ namespace TicTacToeWPFApplication
 
                 // Highlight Winning Cels
                 Button_0_0.Background = Button_0_1.Background = Button_0_2.Background = Brushes.Bisque;
+
+                return;
             }
             if(mResults[3] != MarkType.Free && HorizontalSame2)
             {
@@ -191,6 +193,8 @@ namespace TicTacToeWPFApplication
 
                 // Highlight Winning Cels
                 Button_1_0.Background = Button_1_1.Background = Button_1_2.Background = Brushes.Bisque;
+
+                return;
             }
             if(mResults[6] != MarkType.Free && HorizontalSame3)
             {
@@ -199,6 +203,8 @@ namespace TicTacToeWPFApplication
 
                 // Highlight Winning Cels
                 Button_2_0.Background = Button_2_1.Background = Button_2_2.Background = Brushes.Bisque;
+
+                return;
             }
 
             #endregion Horizontal Win Check
@@ -219,6 +225,8 @@ namespace TicTacToeWPFApplication
                 // Highlight Winning Cels
                 Button_0_0.Background = Button_1_0.Background = Button_2_0.Background = Brushes.Bisque;
                 // Button_0_0.Foreground = Button_1_0.Foreground = Button_2_0.Foreground = Brushes.DarkBlue;
+
+                return;
             }
             if (mResults[1] != MarkType.Free && VerticallSame2)
             {
@@ -228,6 +236,8 @@ namespace TicTacToeWPFApplication
                 // Highlight Winning Cels
                 Button_0_1.Background = Button_1_1.Background = Button_2_1.Background = Brushes.Bisque;
                 // Button_0_0.Foreground = Button_1_0.Foreground = Button_2_0.Foreground = Brushes.DarkBlue;
+
+                return;
             }
             if (mResults[2] != MarkType.Free && VerticallSame3)
             {
@@ -237,6 +247,8 @@ namespace TicTacToeWPFApplication
                 // Highlight Winning Cels
                 Button_0_2.Background = Button_1_2.Background = Button_2_2.Background = Brushes.Bisque;
                 // Button_0_0.Foreground = Button_1_0.Foreground = Button_2_0.Foreground = Brushes.DarkBlue;
+
+                return;
             }
 
             #endregion Vertical Win Check
@@ -256,6 +268,8 @@ namespace TicTacToeWPFApplication
                 // Highlight Winning Cels
                 Button_0_0.Background = Button_1_1.Background = Button_2_2.Background = Brushes.Bisque;
                 // Button_0_0.Foreground = Button_1_0.Foreground = Button_2_0.Foreground = Brushes.DarkBlue;
+
+                return;
             }
             if (mResults[2] != MarkType.Free && DiagonalSame2)
             {
@@ -265,6 +279,8 @@ namespace TicTacToeWPFApplication
                 // Highlight Winning Cels
                 Button_0_2.Background = Button_1_1.Background = Button_2_0.Background = Brushes.Bisque;
                 // Button_0_0.Foreground = Button_1_0.Foreground = Button_2_0.Foreground = Brushes.DarkBlue;
+
+                return;
             }
 
             #endregion Diagonal Win Check
@@ -283,10 +299,14 @@ namespace TicTacToeWPFApplication
                 {
                     button.Background = Brushes.Orange;
                 });
+
+                return;
             }
 
             #endregion Check For Draw
 
         }
+
+       
     }
 }
